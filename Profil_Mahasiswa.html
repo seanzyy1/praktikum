@@ -1,0 +1,93 @@
+<!---
+nim : 232520031
+nama lengkap : Alga Ikhsan Rahmawan
+Kelas : TI-7A
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profil Mahasiswa</title>
+</head>
+<body>
+    <h1>Profil Mahasiswa</h1>
+
+    <h2>Tentang Saya</h2>
+    <img src="gambar/mahasiswa.jpg" alt="Foto Mahasiswa" width="200">
+    <p>
+        Halo, nama saya <strong>Alga Ikhsan</strong>. Saya Mahasiswa
+        di Universitas Muhammadiyah Purworejo, Program Studi Teknologi Informasi.
+    </p>
+    <p>
+        Kunjungi website kampus:
+        <a href="https://umpwr.ac.id/" target="_blank">Website Kampus</a>
+    </p>
+    <h3>Hobi</h3>
+    <ul>
+        <li>Membaca</li>
+        <li>Mendengarkan Musik</li>
+        <li>Bercerita</li>
+    </ul>
+    <h3>Mata Kuliah Semester Ini</h3>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>No</th>
+            <th>Kode</th>
+            <th>Mata Kuliah</th>
+            <th>SKS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>423305</td>
+            <td>Pemrograman Web</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>423306</td>
+            <td>Praktikum Pemrograman Web</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>427213</td>
+            <td>Data Mining</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>427312</td>
+            <td>Audit dan Tata Kelola IT</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>427301</td>
+            <td>Kuliah Kerja Nyata</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <h3>Form Kontak</h3>
+    <form>
+        <p>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            Jenis Kelamin:
+            <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+            
+            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+        </p>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
