@@ -1,0 +1,188 @@
+<!-- Latihan Tugas (Pertemuan 3)
+nim : 232520031
+nama lengkap : Alga Ikhsan Rahmawan
+Kelas : TI-7A
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f6ff;
+            color: #222222;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1a56b0;
+        }
+
+        form {
+            background-color: #ffffff;
+            border: 1px solid #c9d8ee;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        form p {
+            margin: 0 0 12px 0;
+        }
+
+        .label-judul {
+            display: inline-block;
+            width: 130px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            padding: 6px;
+            border: 1px solid #c9d8ee;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #1a56b0;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #1a56b0;
+            color: #ffffff;
+            padding: 10px;
+            border: 1px solid #c9d8ee;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #c9d8ee;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #e8effa;
+        }
+
+        .baris-total td {
+            background-color: #1a56b0;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Mahasiswa</h1>
+
+    <form action="proses.php" method="post">
+
+        <p>
+            <label class="label-judul" for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap">
+        </p>
+
+        <p>
+            <label class="label-judul" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com">
+        </p>
+
+        <p>
+            <span class="label-judul">Jenis Kelamin:</span>
+            <input type="radio" id="jk-l" name="jk" value="L" checked>
+            <label for="jk-l">Laki-laki</label>
+            <input type="radio" id="jk-p" name="jk" value="P">
+            <label for="jk-p">Perempuan</label>
+        </p>
+
+        <p>
+            <label class="label-judul" for="prodi">Prodi:</label>
+            <select id="prodi" name="prodi">
+                <option value="Informatika">Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+            </select>
+        </p>
+
+        <p>
+            <span class="label-judul">Minat:</span>
+            <input type="checkbox" id="m-web" name="minat[]" value="Web">
+            <label for="m-web">Web</label>
+            <input type="checkbox" id="m-mobile" name="minat[]" value="Mobile">
+            <label for="m-mobile">Mobile</label>
+            <input type="checkbox" id="m-data" name="minat[]" value="Data">
+            <label for="m-data">Data</label>
+        </p>
+
+        <p>
+            <label class="label-judul" for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="3" cols="30"></textarea>
+        </p>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+    <h2>Daftar Mahasiswa</h2>
+    <table>
+        <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Prodi</th>
+            <th>IPK</th>
+        </tr>
+
+        <tr>
+            <td>232520001</td>
+            <td>Budi Santoso</td>
+            <td>Informatika</td>
+            <td>3.75</td>
+        </tr>
+        <tr>
+            <td>232520002</td>
+            <td>Sari Wulandari</td>
+            <td>Sistem Informasi</td>
+            <td>3.50</td>
+        </tr>
+        <tr>
+            <td>232520003</td>
+            <td>Andi Pratama</td>
+            <td>Informatika</td>
+            <td>3.82</td>
+        </tr>
+        <tr>
+            <td>232520004</td>
+            <td>Dewi Lestari</td>
+            <td>Teknik Elektro</td>
+            <td>3.20</td>
+        </tr>
+        <tr>
+            <td>232520005</td>
+            <td>Rizky Ramadhan</td>
+            <td>Sistem Informasi</td>
+            <td>3.65</td>
+        </tr>
+
+        <tr class="baris-total">
+            <td colspan="3">Rata-rata IPK</td>
+            <td>3.58</td>
+        </tr>
+    </table>
+</body>
+</html>
