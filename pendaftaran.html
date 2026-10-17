@@ -1,0 +1,110 @@
+<!--- Halaman Pendaftaran Peserta
+nim : 232520031
+nama lengkap : Alga Ikhsan Rahmawan
+Kelas : TI-7A
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f6ff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a56b0;
+        }
+
+        form {
+            background-color: #ffffff;
+            border: 1px solid #c9d8ee;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        form p {
+            margin: 0 0 12px 0;
+        }
+
+        button {
+            background-color: #1a56b0;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #1a56b0;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #c9d8ee;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #e8effa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pendaftaran Peserta</h1>
+
+    <form action="proses.php" method="post">
+        <p>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" value="Budi Santoso">
+        </p>
+        <p>
+            Jenis Kelamin:
+            <input type="radio" id="jk-l" name="jk" value="L" checked>
+            <label for="jk-l">L</label>
+            <input type="radio" id="jk-p" name="jk" value="P">
+            <label for="jk-p">P</label>
+        </p>
+        <p>
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan">
+                <option>Informatika</option>
+                <option>Sistem Informasi</option>
+            </select>
+        </p>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Budi Santoso</td>
+            <td>Informatika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sari Wulandari</td>
+            <td>Sistem Informasi</td>
+        </tr>
+    </table>
+</body>
+</html>
