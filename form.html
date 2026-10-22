@@ -1,0 +1,29 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+
+    Nama :<input type="text" name="nama"><br>
+    Email:<input type="email" name="email"><br>
+    Jenis Kelamin:
+          <input type="radio" name="jk" value="L"> Laki-laki
+          <input type="radio" name="jk" value="P"> Perempuan<br>
+    Hobi:    
+        <input type="checkbox" name="hobi" value="baca"> Menggambar
+        <input type="checkbox" name="hobi" value="musik"> Membaca<br>
+    Jurusan:
+        <select name="jurusan">
+            <option>Teknologi Informasi</option>
+            <option>Informatika</option>
+        </select><br>
+    Alamat:<textarea name="alamat" rows="3"></textarea><br>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
