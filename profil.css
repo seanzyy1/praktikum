@@ -1,0 +1,107 @@
+/* ---------- 1. SELECTOR ELEMEN ----------
+   Mengatur tampilan dasar seluruh halaman */
+body {
+    background-color: lightsteelblue;        /* format warna: NAMA */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px 16px;
+}
+
+/* ---------- 2. SELECTOR GRUP ----------
+   Judul h1 dan h2 berbagi gaya yang sama */
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1f3a5f;                          /* format warna: HEX */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+    letter-spacing: 1px;
+}
+
+/* ---------- 3. SELECTOR CLASS (kotak utama) ----------
+   Box model: lebar tetap, di tengah halaman (margin auto),
+   padding, border, dan border-radius */
+.kartu {
+    width: 400px;                            /* lebar tetap */
+    margin: 0 auto;                          /* kotak berada di tengah */
+    padding: 28px;
+    background-color: white;
+    border: 3px solid #1f3a5f;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);  /* format warna: RGBA */
+}
+
+/* ---------- 4. SELECTOR DESCENDANT ----------
+   Semua paragraf di dalam .kartu */
+.kartu p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgb(60, 60, 60);                  /* format warna: RGB */
+    margin: 8px 0;
+}
+
+/* Class khusus untuk jurusan */
+.jurusan {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Class khusus untuk info hobi */
+.info {
+    font-style: italic;
+}
+
+/* ---------- 5. SELECTOR ID (daftar keahlian) ----------
+   Daftar keahlian dibuat tanpa bullet dan rata tengah */
+#keahlian {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Descendant: li di dalam #keahlian
+   display: inline-block (elemen 1) -> tampil seperti label */
+#keahlian li {
+    display: inline-block;
+    margin: 4px;
+    padding: 6px 14px;
+    font-size: 13px;
+    background-color: #dbe7f5;
+    color: #1f3a5f;
+    border-radius: 20px;
+}
+
+/* ---------- 6. TOMBOL ----------
+   display: inline-block (elemen 2) agar bisa diberi padding
+   dan margin, lalu diletakkan di tengah lewat text-align pada pembungkus */
+.tombol {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 24px;
+    background-color: #1f3a5f;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.tombol:hover {
+    background-color: rgba(31, 58, 95, 0.8);
+}
+
+/* Pembungkus tombol: rata tengah */
+.kartu {
+    text-align: center;
+}
